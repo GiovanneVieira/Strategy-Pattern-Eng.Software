@@ -3,10 +3,10 @@ package engsoft.jogo.patos;
 //Herança sendo aplicada, a herança se baseia em ter uma Super Classe e classes filho.
 //As classes que são derivadas da Super Classes herdarão todos os atributos e métodos da classe pai.
 //A notação de extends indica que a herança será utilizada, nesse caso Pato_Borracha é uma classe filho de Pato
-public class Pato_Borracha extends Pato {
+public class Pato_Borracha extends Pato<Padrao_Voaveis> {
 
 	public Pato_Borracha() {
-		setComportamentoVoavel(new Nao_Voa());
+		setComportamento(new Nao_Voa());
 	}
 
     //Aqui vemos o Polimorfismo, que como conceito permite que objetos de diferentes subclasses atuem de

@@ -1,9 +1,9 @@
 package engsoft.jogo.patos;
 
-public class Pato_Atleta extends Pato {
+public class Pato_Atleta extends Pato<Padrao_Pulaveis> {
 
     public Pato_Atleta() {
-        setComportamentoPulavel(new Pulo_Alto());
+        setComportamento(new Pulo_Alto());
     }
 
     @Override

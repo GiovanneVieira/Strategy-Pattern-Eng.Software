@@ -4,11 +4,11 @@ package engsoft.jogo.patos;
 //O trecho apresenta um comportamento tipico de composição, o objeto utiliza de um oobjeto externo para definir parte
 //de seu comportamento
 
-public class Pato_Bravo extends Pato implements  Padrao_Grasnar{
+public class Pato_Bravo extends Pato<Padrao_Voaveis> implements  Padrao_Grasnar{
 
 	public Pato_Bravo()	
 	{
-		setComportamentoVoavel(new Voaveis_Asa());
+		setComportamento(new Voaveis_Asa());
 	}
 	
 	public String mostrar() {		

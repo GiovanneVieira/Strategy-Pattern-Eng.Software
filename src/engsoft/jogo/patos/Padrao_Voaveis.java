@@ -5,8 +5,11 @@ package engsoft.jogo.patos;
 //Toda classe que implementar a interface deve implementar todos os métodos.
 
 
-public interface Padrao_Voaveis {
-
+public interface Padrao_Voaveis extends ComportamentoPato {
+    @Override
+    default String executarComportamento(){
+        return voar();
+    }
     String voar();
 	
 	double getVelocidade();
