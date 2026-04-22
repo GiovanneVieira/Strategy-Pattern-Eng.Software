@@ -6,7 +6,7 @@ package engsoft.jogo.patos;
 public class Pato_Borracha extends Pato {
 
 	public Pato_Borracha() {
-		setComportamento(new Nao_Voa());		
+		setComportamentoVoavel(new Nao_Voa());
 	}
 
     //Aqui vemos o Polimorfismo, que como conceito permite que objetos de diferentes subclasses atuem de
