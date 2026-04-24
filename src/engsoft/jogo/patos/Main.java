@@ -26,6 +26,14 @@ public class Main {
         ptAtleta.setComportamentoPulavel(new Pulo_Desordenado());
         System.out.println(ptAtleta.comportamento_pato());
 
+        Coelho cDoido = new Coelho_Doido();
+        System.out.println(cDoido.mostrar());
+        System.out.println(cDoido.getComportamento_coelho_pulo());
+
+        Coelho cLixo = new Coelho_Lixo();
+        System.out.println(cLixo.mostrar());
+        System.out.println(cLixo.getComportamento_coelho_pulo());
+
 	}
 
 }
