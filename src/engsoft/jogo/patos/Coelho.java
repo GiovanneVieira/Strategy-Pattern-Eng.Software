@@ -6,6 +6,8 @@ public abstract class Coelho {
 
     protected Padrao_Cavaveis comportamento_coelho_cavar;
 
+    protected Padrao_Comiveis comportamento_coelho_comer;
+
     abstract String mostrar();
 
 
@@ -22,4 +24,11 @@ public abstract class Coelho {
     }
 
     public String getComportamento_coelho_cavar() {return comportamento_coelho_cavar.cavar();}
+
+    public void setComportamento_coelho_comer(Padrao_Comiveis comportamento_coelho_comer) {
+        this.comportamento_coelho_comer = comportamento_coelho_comer;
+    }
+    public String getComportamento_coelho_comer() {return comportamento_coelho_comer.comer();}
+
+
 }
